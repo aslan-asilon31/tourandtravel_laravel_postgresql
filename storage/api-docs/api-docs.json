@@ -1,0 +1,32 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "APIs For Tour and Travel Server by AslanAsilon",
+        "description": "API documentation for the My Tour and Travel Package App such as Aurofil, Plonia, and Travelix",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/travel-package": {
+            "get": {
+                "tags": [
+                    "TravelPackages"
+                ],
+                "summary": "Get list of travel packages",
+                "operationId": "getTravelPackageList",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    }
+                }
+            }
+        }
+    }
+}
